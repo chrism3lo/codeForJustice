@@ -17,6 +17,23 @@ body{
     background-size: cover;
 }
 
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100vw; */
+    background-color: black;
+    height: 5vh;
+}
+
+
+
+
+
+
 .container{
     width:400px;
     max-width: 400px;
