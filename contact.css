@@ -1,18 +1,50 @@
 html, body {
-    margin: 0 30px 20px 30px;
-    font-family: 'Maven Pro', sans-serif;
+    margin: 30px;
+    font-family: 'Plain-Light', sans-serif;
+    font-size: 20px;
+    /* padding: 10px; */
+    background-color: rgb(183, 183, 183);
+}
+
+.back {
+    background-color: white;
+    height: 103em;
+    width: 66em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:visited {
+    color: white;
 }
 
 .navContainer > ul {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
+    background-color: #0060af;
+    padding: 30px;
 }
 
-.logoContainer {
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Community.jpeg");
+    height: 700px;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* position: relative; */
+  }
+
+.hero-text {
+    color: white;
     display: flex;
     justify-content: center;
-    width: 100%;
+}
+
+.hero-text > h1 {
+    margin-top: 625px;
 }
 
 .head {
@@ -20,21 +52,17 @@ html, body {
     color: white;
     padding: 2em 0 2em 0;
     text-align: center;
+    margin-top: 30px;
 }
 
-.flexcontainer {
+.faqContainer {
     display: flex;
-    justify-content: center;
-}
-
-.flexcontainer > ul {
-    font-size: large;
+    flex-wrap: wrap;
+    height: 350px;
+    flex-direction: column;
     color: rgb(0, 149, 255);
 }
 
-.griditem {
-    font-size: large;
-}
 
 .head2 {
     background-color: #0060af;
@@ -47,12 +75,19 @@ html, body {
 .contactForm {
     display: flex;
     justify-content: center;
-    border: 2px solid black;
     margin-left: 25em;
     margin-right: 25em;
     margin-bottom: 10px;
     padding: 1em;
 }
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
 
 .contactForm input {
     border-radius: 25px;
@@ -65,4 +100,8 @@ html, body {
     width: 30em;
 }
 
+.footerContainer > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
 
