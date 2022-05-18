@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 5px;
+  }
+  
+  /*logo styling*/
+  .logo {
+    float: left;
+    width: 18vw;
+    height: 26vh;
+    position: relative;
+  }
+  /*nav bar styling*/
+  header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  a {
+    color: white;
+    padding-bottom: 2px;
+    text-decoration: none;
+  }
+  
+  /*temp hero image*/
+  .hero{
+    width: 90vw;
+    height: 100vh;
+    object-position: top;
+  }
+  
+  /*Flex Box Containers*/
+  .container {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    background-color: #4A90E2;
+    padding: 50px;
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+  }
+  
+  /*Curve Heading*/
+  .custom-shape-divider-top-1652897771 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      overflow: hidden;
+      line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1652897771 svg {
+      position: relative;
+      display: block;
+      width: calc(235% + 1.7px);
+      height: 500px;
+  }
+  
+  .custom-shape-divider-top-1652897771 .shape-fill {
+      fill: #4A90E2;
+  }
