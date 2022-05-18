@@ -1,0 +1,23 @@
+/* calendar */
+.calendars{
+
+}
+.calendar{
+    display: inline-block;
+    
+}
+#agendaCal{
+    float: right;
+}
+#mainCal{
+    justify-content: center;
+}
+
+
+/* Media Queuries */
+@media (max-width: 1119px){
+    #agendaCal{
+        float:left;
+    }
+}
+
