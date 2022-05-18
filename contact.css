@@ -1,0 +1,68 @@
+html, body {
+    margin: 0 30px 20px 30px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.navContainer > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.head {
+    background-color: #0060af;
+    color: white;
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.flexcontainer > ul {
+    font-size: large;
+    color: rgb(0, 149, 255);
+}
+
+.griditem {
+    font-size: large;
+}
+
+.head2 {
+    background-color: #0060af;
+    color: white;
+    padding: 2em 0 2em 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin-left: 25em;
+    margin-right: 25em;
+    margin-bottom: 10px;
+    padding: 1em;
+}
+
+.contactForm input {
+    border-radius: 25px;
+    width:30em;
+    height: 2em
+}
+
+.contactForm textarea {
+    border-radius: 10px;
+    width: 30em;
+}
+
+
