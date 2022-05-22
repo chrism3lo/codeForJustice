@@ -1,4 +1,4 @@
-body{
+body {
     --color-primary: #009579;
     --color-primary-dark: #007f67;
     --color-secondary: #252c6a;
@@ -6,11 +6,11 @@ body{
     --color-success: #4bb544;
     --border-radius: 4px;
 
-    margin: 0;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    height: 100vh;
     font-size: 18px;
     background: url(unity.jpg);
     background-position: center center;
@@ -20,20 +20,7 @@ body{
 
 
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 100vw; */
-    background-color: black;
-    height: 5vh;
-}
-
-
-
-
-
-
+/* Login Form  */
 .container{
     width:400px;
     max-width: 400px;
@@ -89,7 +76,7 @@ nav{
     transition: background 0.2s, border-color 0.2s;
 }
 .form__input:focus {
-    border-color: var(--color-primary);
+    border: 1.5px solid #009579;
     background: #ffffff;
 }
 .form__input--error{
@@ -131,4 +118,29 @@ nav{
 
 .form__link:hover{
     text-decoration: underline;
+}
+
+/* Login Form */
+
+
+
+/* Footer Curve Code */
+.custom-shape-divider-bottom-1653166623 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1653166623 svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-bottom-1653166623 .shape-fill {
+    fill: #009579;
 }
