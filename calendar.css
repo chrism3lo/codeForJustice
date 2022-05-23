@@ -1,23 +1,74 @@
+/*nav bar styling*/
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  a {
+    color: white;
+    padding-bottom: 2px;
+    text-decoration: none;
+  }
+
 /* calendar */
 .calendars{
-
-}
-.calendar{
-    display: inline-block;
-    
-}
-#agendaCal{
-    float: right;
-}
-#mainCal{
-    justify-content: center;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
 
+/* wave */
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    border-top: 500px;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 133px;
+}
+
+.wave .shape-fill {
+    fill: #F63232;
+}
 
 /* Media Queuries */
 @media (max-width: 1119px){
-    #agendaCal{
-        float:left;
+   .calendars{
+       flex-direction: column;
+   }
+   .calendar{
+        width: 100vw;
+        height: auto;
+    
     }
+
 }
 
