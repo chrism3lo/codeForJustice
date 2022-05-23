@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Cachet Bold',Verdana,Geneva,sans-serif;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 20px 0 20px;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+  text-transform: capitalize;
+}
+
+.smallLogo {
+  width: 18vw;
+  height: 26vh;
+  position: relative;
+  bottom: 85px;
+}
+
+  /* Curve Heading*/
+  .custom-shape-divider-top-1652897771 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1652897771 svg {
+    position: relative;
+    display: block;
+    width: calc(235% + 1.7px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1652897771 .shape-fill {
+    fill: rgb(180, 0, 180);
+}
+
+.navContainer > ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+ } 
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/Community.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+  margin-bottom: -30px;
+}
+
+.hero-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text > h1 {
+  margin-top: 625px;
+}
+
+.head {
+  background-color: rgb(180, 0, 180);
+  color: white;
+  padding: 2em 0 2em 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.faqGrid {
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.gridItem {
+  list-style-type:disc;
+}
+
+.head2 {
+  background-color: rgb(180, 0, 180);
+  color: white;
+  padding: 2em 0 2em 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: fit-content;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+}
+
+.gridLogo {
+  justify-self: end;
+}
+
+.contactForm input {
+  border-radius: 25px;
+  width: 30em;
+  height: 2em;
+}
+
+.contactForm textarea {
+  border-radius: 10px;
+  width: 30em;
+}
+
+.custom-shape-divider-bottom-1653167433 {
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  /* line-height: 0; */
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1653167433 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 160px;
+}
+
+.custom-shape-divider-bottom-1653167433 .shape-fill {
+  fill: rgb(180, 0, 180);
+}
+
+.footerContainer > ul{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+}
+
+.footerContainer > ul > li {
+  margin-top:100px;
+}
+

@@ -1,0 +1,101 @@
+html,
+body {
+    background-color: #E9EFC0;
+    margin-top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul>li {
+    padding: 20px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.logo {
+    float: left;
+    width: 14vw;
+    height: 22vh;
+    position: relative;
+    margin-left: 20px;
+}
+
+/* title { */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+    color: #83BD75;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* height: 500px; */
+    margin-top: 50px;
+}
+
+
+
+a {
+    background: transparent;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #614124;
+}
+
+h3 {
+    text-align: center;
+    color: #614124;
+}
+
+.box {
+    /* background-color: #97fc8a; */
+    padding: 50px;
+    margin: 10px;
+    color: black;
+    font-size: 25px;
+    display: block;
+    background: transparent;
+
+}
+
+
+section {
+    margin-top: 80px;
+    position: relative;
+
+}
+
+.footerContainer>ul {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: white;
+}
+
+.custom-shape-divider-bottom-1653164264 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1653164264 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 177px;
+}
+
+.custom-shape-divider-bottom-1653164264 .shape-fill {
+    fill: #B4E197;
+}
