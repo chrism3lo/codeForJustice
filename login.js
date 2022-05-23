@@ -11,6 +11,11 @@ function setInputError(inputElement, message){
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
 }
 
+function clearInputError(inputElement){
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+}
+
 document.addEventListener("DOMContentLoaded", ()=>{
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector("#createAccount");
@@ -29,16 +34,34 @@ document.addEventListener("DOMContentLoaded", ()=>{
         
     });
 
-    // const userName = document.getElementById("Username");
-    // const password = document.getElementById("Password");
+    const userName = document.getElementById("Username");
+    const password = document.getElementById("Password");
+
 
     loginForm.addEventListener("submit", e =>{
-        e.preventDefault();
-//if (userName != "Chrismelo@email.com" && password != "1234"){
+       e.preventDefault();
+
+if (userName.value != "HelpersHub" && password.value != "1234"){
             setFormMessage(loginForm, "error", "Invalid Username/Password combination");
-        //} else {
-            //setFormMessage(loginForm, "Success", "You're Logged in!");
-//}
+        } else {
+            setFormMessage(loginForm, "success", "You're Logged in!");
+
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 2500);
+}
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if(e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10){
+                setInputError(inputElement, "Username must be atleast 10 characters in length")
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        })
     });
 
 });
