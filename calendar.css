@@ -1,62 +1,76 @@
-/*nav bar styling*/
-header a {
-    text-decoration: none;
+html,
+body {
+    margin-top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+ul>li {
+    padding: 15px;
+    list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
     font-family: sans-serif;
-  }
-  
-  header ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  header li {
+    color: rgb(227, 54, 54);
+  font-family: Fraunces;
+    
+}
+
+.logo {
     float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header nav {
-    float: right;
-    margin-top: 10px;
-    padding: 10px;
+    width: 14vw;
+    height: 22vh;
     position: relative;
-  }
-  
-  a {
-    color: white;
-    padding-bottom: 2px;
-    text-decoration: none;
-  }
+    margin-left: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 180px;
+  color: rgb(227, 54, 54);
+  font-family: Fraunces;
+}
 
 /* calendar */
 .calendars{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+margin-top: 150px;
+margin-bottom: 200px;
+}
+
+.footerContainer>ul {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
 }
 
 /* wave */
-.wave {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    border-top: 500px;
+.custom-shape-divider-bottom-1653164264 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 10px;
 }
 
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(144% + 1.3px);
-    height: 133px;
+.custom-shape-divider-bottom-1653164264 svg {
+  position: relative;
+  display: block;
+  width: calc(151% + 1.3px);
+  height: 177px;
 }
 
-.wave .shape-fill {
-    fill: #F63232;
+.custom-shape-divider-bottom-1653164264 .shape-fill {
+  fill: rgb(223, 10, 10);
 }
 
 /* Media Queuries */
