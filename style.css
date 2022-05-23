@@ -1,0 +1,680 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee 
+ */
+
+
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* part where you give Ethiopia invisbility powers, have to use text stroke*/
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  /* GO OVER */
+  color: orange;
+}
+
+
+
+/* main page was looking as crooked as my teeth before braces, got to @ my html content and make changes too that*/
+.content {
+  text-align: center;
+}
+
+/* actual font and color changes have to @h1 this is specfic towards Ethiopia and Explore Button*/
+.content h1 {
+  font-size: 50px;
+  color: black;
+  font-weight: 600;
+}
+
+
+
+
+/* to make them in line you have to tweak display border radius, margin top and padding. Write more notes on those fairly confusing*/
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  /*GO OVER */
+  margin-top: 20px;
+}
+
+
+/*---------------- navbar ----------------*/
+
+nav {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  /* GO OVER */
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 160px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  /* GO OVER */
+  color: black;
+  font-size: 20px;
+}
+
+
+
+
+
+
+/*-------------- Facilities ----------------*/
+
+.facility {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facility-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facility-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facility-col p {
+  padding: 0;
+}
+
+.facility-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  #root is shortcut for var colors instead of rbga use for text font 
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * color
+   */
+--bluer: #91cad6;
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --middle-blue-green: hsl(167, 44%, 70%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --olive-drab-7: hsl(54, 96%, 10%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --white: hsl(0, 0%, 100%);
+  --snow: hsl(26, 100%, 99%);
+  --black: black;
+
+  /**
+   * others 
+   */
+
+  --default-transtion: 0.25s ease;
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+span,
+img,
+ion-icon {
+  display: block;
+}
+
+html {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+.btn,
+.about-link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #MAIN CONTAINER
+\*-----------------------------------*/
+
+.container {
+  background: var(--snow);
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #HEADER 
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+  #HOME
+\*-----------------------------------*/
+
+.home {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+}
+
+/*-----------------------------------*\
+  we use cover fit because it allows it to cover whole element: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+\*-----------------------------------*/
+
+.transition-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/*-----------------------------------*\
+Set parent for positioning of title and use tranform method to set up the arrow
+The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+.top-content {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  right: 25px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.main-heading {
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 40px;
+}
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+postioning of arrow should line up and use 2 second transition 
+\*-----------------------------------*/
+
+.arrow-down {
+  display: inline-block;
+  animation: jump-down 2s ease infinite;
+}
+/*-----------------------------------*\
+keyframes controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. This gives more control over the intermediate steps of the animation sequence than transitions.so by sectioning out % we create a motion
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #about page set up for first row, use 1fr to set grid
+\*-----------------------------------*/
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*-----------------------------------*\
+  we use cover fit because it allows it to cover whole element: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+\*-----------------------------------*/
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resource-desc {
+  padding: 60px 25px;
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+}
+
+.resource-title {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.resource-info {
+  color: var(--dark-grayish-blue);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------*\
+  make it relative and uppercase, z index for before after color underline
+\*-----------------------------------*/
+
+.about-link {
+  position: relative;
+  color: var(--very-dark-desaturated-blue);
+  font-size: 16px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/*-----------------------------------*\
+The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+\*-----------------------------------*/
+
+.about-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -8px);
+  background: var(--yellow);
+  width: calc(100% + 20px);
+  height: 10px;
+  border-radius: 10px;
+  opacity: 0.7;
+  z-index: -1;
+  transition: var(--default-transtion);
+}
+
+.about-link:hover::after {
+  opacity: 1;
+}
+
+.pink::after {
+  background: var(--soft-red);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #SERVICES
+\*-----------------------------------*/
+
+.servicesdisplay {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.service-contain {
+  position: relative;
+}
+
+/*-----------------------------------*\
+ OVERFLOW Content is clipped if necessary to fit the padding box. No scrollbars are provided, and no support for allowing the user to scroll (such as by dragging or using a scroll wheel) is allowed. The content can be scrolled programmatically (for example, by setting the value of a property such as scrollLeft or the scrollTo() method), so the element is still a scroll container.
+\*-----------------------------------*/
+
+.service-contain .img-display {
+  height: 600px;
+  overflow: hidden;
+}
+
+/*-----------------------------------*\
+  we use cover fit because it allows it to cover whole element: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+\*-----------------------------------*/
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-logo {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+/*-----------------------------------*\
+Setting second row up for absoulute postion. Bottom for text space in element transform for:
+The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+\*-----------------------------------*/
+
+.service-second-row {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+}
+
+/*-----------------------------------*\
+setting margin and capitalize the last row of resoruces  
+\*-----------------------------------*/
+.service-h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.service-p {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/*-----------------------------------*\
+setting root colors 
+\*-----------------------------------*/
+.service-h3.cyan,
+.service-p.cyan {
+  color: var(--dark-desaturated-cyan);
+}
+
+.service-h3.blue,
+.service-p.blue {
+  color: var(--black);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #set in depth section to contain our logo, next set of images as well as button to blog page 
+\*-----------------------------------*/
+
+.inDepth {
+  padding: 65px 25px;
+}
+
+.inDepth-h2 {
+  color: var(--grayish-blue);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  background: var(--soft-red);
+  padding: 70px 30px;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  margin-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+   * #HOME 
+   */
+
+.home {
+  height: 700px;
+}
+
+
+
+/**
+   * #ABOUT 
+   */
+
+.about-img-display {
+  height: 450px;
+  overflow: hidden;
+}
+
+
+
+
+
+.inDepth {
+  padding: 150px 25px;
+}
+
+.inDepth-h2 {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  #grid for childcare
+\*-----------------------------------*/
+
+.about {
+  grid-template-columns: 1fr 1fr;
+}
+
+/*-----------------------------------*\
+  #grid for foodbank
+\*-----------------------------------*/
+.grid-pos-lg {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.about-img-display {
+  height: auto;
+}
+
+/*-----------------------------------*\
+  #text elements on top of image 
+\*-----------------------------------*/
+.resource-desc {
+  padding: 60px;
+  text-align: left;
+}
+
+/*-----------------------------------*\
+  #link edits
+\*-----------------------------------*/
+.about-link {
+  margin-left: 10px;
+}
+
+
+
+/*-----------------------------------*\
+  #RESOURCES PAGE
+\*-----------------------------------*/
+.servicesdisplay {
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul>li {
+  padding: 20px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.logo {
+  float: left;
+  width: 14vw;
+  height: 22vh;
+  position: relative;
+  margin-left: 20px;
+}
+
+/* title { */
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 150px;
+  color: #83BD75;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* height: 500px; */
+  margin-top: 50px;
+}
+
+
+
+a {
+  background: transparent;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: #614124;
+}
+
+h3 {
+  text-align: center;
+  color: var(--dark-desaturated-cyan);
+}
+
+.box {
+  /* background-color: #97fc8a; */
+  padding: 50px;
+  margin: 10px;
+  color: black;
+  font-size: 25px;
+  display: block;
+  background: transparent;
+
+}
+
+
+
+/**
+   * #PROJECTS 
+   */
+
+.projects {
+  grid-template-columns: repeat(4, 1fr);
+}
