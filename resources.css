@@ -1,9 +1,10 @@
 html,
 body {
-    background-color: #E9EFC0;
+    background-color: white;
     margin-top: 0;
 }
 
+/* nav bar */
 ul {
     display: flex;
     justify-content: flex-end;
@@ -14,9 +15,11 @@ ul>li {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: Fraunces;
+    font-size: 18px;
 }
 
+/* logo */
 .logo {
     float: left;
     width: 14vw;
@@ -30,49 +33,60 @@ h1 {
     font-size: 50px;
     text-align: center;
     margin-top: 150px;
-    color: #83BD75;
+    color: #f45337;
+    font-family: Fraunces;
 }
 
+/* resources grid */
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /* height: 500px; */
+    gap: 25px;
     margin-top: 50px;
 }
 
-
+@media only screen and (max-width: 900px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+}
 
 a {
     background: transparent;
     padding-bottom: 2px;
     text-decoration: none;
-    color: #614124;
+    color: black;
 }
 
 h3 {
     text-align: center;
-    color: #614124;
+    color: white;
+    font-family: Fraunces;
+    font-size: 28px;
 }
 
 .box {
-    /* background-color: #97fc8a; */
     padding: 50px;
     margin: 10px;
     color: black;
-    font-size: 25px;
+    font-size: 24px;
     display: block;
-    background: transparent;
-
+    background: #B4E197;
+    font-family: Verdana, sans-serif;
 }
 
+.button:hover {
+    background: transparent;
+    color: white;
+}
 
+/* wave */
 section {
     margin-top: 80px;
     position: relative;
-
 }
 
+/* socail media links */
 .footerContainer>ul {
     display: flex;
     justify-content: flex-start;
@@ -80,9 +94,13 @@ section {
     color: white;
 }
 
+.footerContainer>ul>li {
+    margin-top: 105px;
+}
+
+/* wave */
 .custom-shape-divider-bottom-1653164264 {
     position: absolute;
-    /* bottom: 0; */
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -97,5 +115,5 @@ section {
 }
 
 .custom-shape-divider-bottom-1653164264 .shape-fill {
-    fill: #B4E197;
+    fill: rgb(84, 163, 84);
 }
