@@ -1,94 +1,176 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  
-  h1 {
-    padding: 5px;
-  }
-  
-  /*logo styling*/
-  .logo {
-    float: left;
-    width: 18vw;
-    height: 26vh;
-    position: relative;
-  }
-  /*nav bar styling*/
-  header a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  
-  header ul {
-    margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  padding: 5px;
+}
+
+h2 {
+  padding: 15px;
+}
+
+/*logo styling*/
+.logo {
+  float: left;
+  width: 18vw;
+  height: 26vh;
+  position: relative;
+}
+/*nav bar styling*/
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+a {
+  color: white;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+/*temp hero image*/
+.hero{
+  background-image: url("https://www.nvfs.org/wp-content/uploads/2017/04/volunteer-hero.jpg");
+  background-repeat: no-repeat;
+  height:100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center top;
+  padding-left: 0;
+}
+
+/*Hero Text*/
+.herotext{
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 36px;
+  padding-top: 250px;
+  padding-left:200px;
+}
+
+/*Flex Box Containers*/
+.container {
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #4A90E2;
+  padding: 50px;
+  margin: 10px;
+  color: black;
+  font-size: 30px;
+  box-shadow: 3px 3px 8px 0px steelblue;
+}
+
+.box img {
+  max-width: 23vw;
+  min-width: 23vw;
+  max-height: 15vw;
+  min-height: 15vw;
+}
+
+/*Curve Heading*/
+.custom-shape-divider-top-1652897771 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
     padding: 0;
-  }
-  
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header nav {
-    float: right;
-    margin-top: 10px;
-    padding: 10px;
+    margin: 0;
+
+}
+
+.custom-shape-divider-top-1652897771 svg {
     position: relative;
-  }
-  
-  a {
-    color: white;
-    padding-bottom: 2px;
-    text-decoration: none;
-  }
-  
-  /*temp hero image*/
-  .hero{
-    width: 90vw;
-    height: 100vh;
-    object-position: top;
-  }
-  
-  /*Flex Box Containers*/
-  .container {
-    position: relative;
-    flex-wrap: wrap;
+    display: block;
+    width: calc(235% + 1.7px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1652897771 .shape-fill {
+    fill: #4A90E2;
+}
+
+
+/*Footer Wave*/
+.footerContainer>ul {
     display: flex;
-    background-color: white;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  .box {
-    background-color: #4A90E2;
-    padding: 50px;
-    margin: 10px;
-    color: black;
-    font-size: 30px;
-  }
-  
-  /*Curve Heading*/
-  .custom-shape-divider-top-1652897771 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      overflow: hidden;
-      line-height: 0;
-  }
-  
-  .custom-shape-divider-top-1652897771 svg {
-      position: relative;
-      display: block;
-      width: calc(235% + 1.7px);
-      height: 500px;
-  }
-  
-  .custom-shape-divider-top-1652897771 .shape-fill {
-      fill: #4A90E2;
-  }
+    justify-content: flex-start;
+    position: relative;
+    color: white;
+}
+
+.custom-shape-divider-bottom-1653164264 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1653164264 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 177px;
+}
+
+.custom-shape-divider-bottom-1653164264 .shape-fill {
+    fill: #4A90E2;
+}
+
+/*social media button styling*/
+.fa {
+  position: absolute;
+/*   bottom: 50%; */
+  padding-top:230px;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
+footer li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: white;
+  border: 1px solid white;
+}
+.fa:hover {
+    opacity: 0.7;
+}

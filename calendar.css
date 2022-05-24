@@ -1,23 +1,88 @@
-/* calendar */
-.calendars{
-
+html,
+body {
+    margin-top: 0;
 }
-.calendar{
-    display: inline-block;
+
+ul {
+    display: flex;
+    justify-content: flex-end;
     
 }
-#agendaCal{
-    float: right;
-}
-#mainCal{
-    justify-content: center;
+
+ul>li {
+    padding: 15px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(227, 54, 54);
+  font-family: Fraunces;
+    
 }
 
+.logo {
+    float: left;
+    width: 14vw;
+    height: 22vh;
+    position: relative;
+    margin-left: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 180px;
+  color: rgb(227, 54, 54);
+  font-family: Fraunces;
+}
+
+/* calendar */
+.calendars{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 150px;
+margin-bottom: 200px;
+}
+
+.footerContainer>ul {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+}
+
+/* wave */
+.custom-shape-divider-bottom-1653164264 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 10px;
+}
+
+.custom-shape-divider-bottom-1653164264 svg {
+  position: relative;
+  display: block;
+  width: calc(151% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-bottom-1653164264 .shape-fill {
+  fill: rgb(223, 10, 10);
+}
 
 /* Media Queuries */
 @media (max-width: 1119px){
-    #agendaCal{
-        float:left;
+   .calendars{
+       flex-direction: column;
+   }
+   .calendar{
+        width: 100vw;
+        height: auto;
+    
     }
+
 }
 
